@@ -1,13 +1,24 @@
 import React from "react";
 import "./Navbar.css";
-import { HashRouter as Router, Route, Link, Switch } from "react-router-dom";
+import {
+  HashRouter as Router,
+  Link,
+  // Route,
+  //  Switch
+} from "react-router-dom";
+import logo1 from '../../assests/logo1.svg'
+import logo2 from '../../assests/logo2.svg'
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
     <Router>
       <div className="navbar">
-        <div className="logo"></div>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <img src={logo1} alt="logo" />
+          <img src={logo2} alt="logo" />
+        </div>
         <div className="nav-links">
+
           <Link className="market-place" to="/">
             Marketplace
           </Link>
