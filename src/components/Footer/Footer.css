@@ -65,9 +65,15 @@
   color: white;
 }
 
-.footer_bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 5rem 10rem;
+@media only screen and (max-width: 600px) {
+  .footer {
+    font-size: 0.7rem;
+  }
+  .footer_flex {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .footer_col {
+    padding: 0 1rem;
+  }
 }

@@ -10,7 +10,7 @@ import banner3 from '../../assests/banner3.svg';
 import banner4 from '../../assests/banner4.svg';
 import banner5 from '../../assests/banner5.svg';
 
-import banner1_text from '../../assests/banner1_text.svg';
+import banner1_text from '../../assests/banner1_text.png';
 import Silver_heading from '../../assests/Silver_heading.png';
 import SilverCard from '../../assests/SilverCard.png';
 import SilverLeftArrow from '../../assests/SilverLeftArrow.svg';
@@ -39,16 +39,16 @@ const Home: React.FC = () => {
         <div className="relative ">
             {/* banner */}
             <div className="absolute left-0 top-0 left-0 mt-80 ml-72 ">
-                <img src={banner1_text} alt="banner1" />
+                <img src={banner1_text} alt="banner1" className="w-40 h-40 md:w-full md:h-full" />
             </div>
             <img src={headerImg} alt="banner1" className="w-full h-full" />
             <div className="relative ">
 
-                <img src={banner1} alt="banner1" className="w-full h-full" />
-                <img src={banner2} alt="banner1" className="w-full h-full -mt-1" />
-                <img src={banner3} alt="banner1" className="w-full h-full -mt-1" />
-                <img src={banner4} alt="banner1" className="w-full h-full -mt-1" />
-                <img src={banner5} alt="banner1" className="w-full h-full" />
+                <img src={banner1} alt="banner1" className=" w-full h-full" />
+                <img src={banner2} alt="banner1" className=" w-full h-full -mt-1" />
+                <img src={banner3} alt="banner1" className=" w-full h-full -mt-1" />
+                <img src={banner4} alt="banner1" className=" w-full h-full -mt-1" />
+                <img src={banner5} alt="banner1" className=" w-full h-full" />
 
                 <div className="absolute left-0 top-0 right-0 ml-auto  mr-auto Silver_heading">
                     <CardRow headerImg={Silver_heading} cardImgs={sliverCards} rightArrow={SilverLeftArrow} />
@@ -56,8 +56,7 @@ const Home: React.FC = () => {
                     <CardRow headerImg={PlatinumHeading} cardImgs={PlatinumCards} rightArrow={PlatinumLeftArrow} />
                     <LegendaryRow header={LegendaryHeading} cards={LegendaryCards} rightArrow={LegendaryleftArrow} />
                     <TrendingNFTS header={Trending_NFT_Heading} cards={TrendingNFTS_Cards} />
-                    <img src={NFTsLoadingCards} alt="logo" className="ml-auto mt-80" />
-
+                    <img src={NFTsLoadingCards} alt="logo" className="ml-auto  mt-20 md:mt-80 w-28 md:w-80" />
                 </div>
             </div>
         </div>

@@ -7,9 +7,9 @@ interface Props {
 
 const TrendingNFTS: React.FC<Props> = ({ cards, header, }) => {
     return (
-        <div className=" mt-56 px-24">
+        <div className=" md:mt-56 mt-20 md:px-24 px-20 ">
             <img src={header} alt="banner1" className="" />
-            <div className="grid grid-cols-3 gap-10 px-24 pt-20 ">
+            <div className="grid grid-cols-3 md:gap-10 gap-5 md:px-24 px-0 md:pt-20 pt-5 ">
                 {cards?.map((i, n) =>
                     <img key={n} src={i} alt="SilverCard" className='w-full' />
                 )}

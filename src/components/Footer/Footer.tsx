@@ -8,7 +8,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const Footer: React.FC = () => {
     return (
-        <div className="footer  -mt-40 pt-16" >
+        <div className="footer  -mt-40 md:pt-16 pt-0 " >
             <div className="footer_flex">
                 <div className="footer_col -mt-4">
                     <Logo />
@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
                     <p className="mt-4">Email</p>
                 </div>
                 <div className="footer_col mt-4" >
-                    <p style={{ textAlign: "left", fontSize: '.9rem' }}>Subscribe to our newsletter to stay
+                    <p >Subscribe to our newsletter to stay
                         updated on the latest release</p>
 
                     <div className="footer_input mt-5">
@@ -44,13 +44,12 @@ const Footer: React.FC = () => {
                 </div>
 
             </div>
-            <div className="footer_bottom text-base">
-                <p className="">
+            <div className="flex flex-col items-center justify-between  md:my-10 md:mx-40 my-5 mx-5 md:flex-row text-base ">
+                <p className="text-sm md:text-lg" >
                     Copyright © 2010-2021 ECCHI COIN. All rights reserved.
                 </p>
-                <p>Privacy Policy</p>
+                <p className="mt-5 text-sm md:text-lg">Privacy Policy</p>
             </div>
-
         </div>
     )
 }
