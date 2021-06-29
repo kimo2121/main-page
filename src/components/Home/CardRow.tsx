@@ -19,7 +19,6 @@ const CardRow: React.FC<Props> = ({ cardImgs, headerImg, rightArrow }) => {
                 </div>
                 <img src={rightArrow} alt="SilverCard" className="absolute top-0 right-0 bottom-0 mt-auto mb-auto mr-16 " />
             </div>
-
         </div>
     );
 };

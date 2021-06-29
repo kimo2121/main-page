@@ -8,48 +8,44 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const Footer: React.FC = () => {
     return (
-        <div className="footer" >
-            <div className="">
-
-            </div>
+        <div className="footer  -mt-40 pt-16" >
             <div className="footer_flex">
-
-                <div className="footer_col">
+                <div className="footer_col -mt-4">
                     <Logo />
-                    <div className="soical">
-                        <FaFacebookF />
-                        <FaInstagram />
-                        <FaLinkedinIn />
+                    <div className="soicalSvg">
+                        <FaFacebookF style={{fontSize:"1.5rem"}} />
+                        <FaInstagram  style={{fontSize:"1.5rem"}}  />
+                        <FaLinkedinIn style={{fontSize:"1.5rem"}} />
                     </div>
                 </div>
                 <div className="footer_col">
-                    <p>Navigate</p>
-                    <p>Home</p>
-                    <p>Products</p>
-                    <p>Popular Nfts</p>
-                    <p>About</p>
+                    <p className="mt-4">Navigate</p>
+                    <p className="mt-4">Home</p>
+                    <p className="mt-4">Products</p>
+                    <p className="mt-4">Popular Nfts</p>
+                    <p className="mt-4">About</p>
                 </div>
                 <div className="footer_col">
-                    <p>Support</p>
-                    <p>Contact Us</p>
-                    <p>FAQs</p>
-                    <p>Email</p>
+                    <p className="mt-4">Support</p>
+                    <p className="mt-4">Contact Us</p>
+                    <p className="mt-4">FAQs</p>
+                    <p className="mt-4">Email</p>
                 </div>
-                <div className="footer_col">
+                <div className="footer_col mt-4" >
                     <p style={{ textAlign: "left", fontSize: '.9rem' }}>Subscribe to our newsletter to stay
                         updated on the latest release</p>
 
-                    <div className="footer_input">
-                        <div className="input_contianer">
-                            <input type="text" placeholder="Enter your email" />
+                    <div className="footer_input mt-5">
+                        <div className="input_contianer ">
+                            <input type="text" placeholder="Enter your email" className="ml-5 " />
                         </div>
                         <button>Subscribe</button>
                     </div>
                 </div>
 
             </div>
-            <div className="footer_bottom">
-                <p >
+            <div className="footer_bottom text-base">
+                <p className="">
                     Copyright © 2010-2021 ECCHI COIN. All rights reserved.
                 </p>
                 <p>Privacy Policy</p>

@@ -1,8 +1,8 @@
 .footer {
-  background: #10082F;
+  background: #10082f;
   height: 624px;
   font-weight: bold;
-  color:white
+  color: white;
 }
 .footer_flex {
   display: flex;
@@ -17,18 +17,17 @@
   align-items: flex-start;
   max-width: 300px;
 }
-.soical{
+.soicalSvg {
   display: flex;
   justify-content: space-between;
-  margin: 2rem 1rem ;
+  margin: 2rem 1rem;
   width: 85px;
 }
-.soical svg {
-  font-size: .7rem;
+.soicalSvg svg {
+  font-size: 0.7rem;
   border: 1px solid rgba(255, 255, 255, 0.13);
-  padding: .4rem;
+  padding: 0.4rem;
   border-radius: 5rem;
-  
 }
 .footer_input {
   display: flex;
@@ -38,7 +37,6 @@
   width: 325px;
 }
 
-
 .input_contianer {
   border: 1px solid rgba(255, 255, 255, 0.13);
   height: 95%;
@@ -47,7 +45,7 @@
 
 .footer_input input {
   height: 90%;
-  background: #10082F;
+  background: #10082f;
   color: white;
   border: none;
   /* margin-left: 1rem; */
@@ -61,7 +59,7 @@
   color: white;
 }
 .footer_input button {
-  background: #0F7D4C;
+  background: #0f7d4c;
   height: 100%;
   width: 30%;
   color: white;
@@ -72,5 +70,4 @@
   align-items: center;
   justify-content: space-between;
   margin: 5rem 10rem;
-
 }
