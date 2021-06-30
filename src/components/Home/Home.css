@@ -1,15 +1,22 @@
-
 .centerComp {
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 0;
-    margin-left: auto;
-    margin-right: auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
-.banner1_text {
-    margin-top: 19rem;
+.banner_text {
+  /* width: 10rem; */
+  /* height: 10rem; */
 }
 .Silver_heading {
-    margin-top: 10rem;
+  margin-top: 10rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner_text {
+    width: 10rem;
+    height: 10rem;
+  }
 }

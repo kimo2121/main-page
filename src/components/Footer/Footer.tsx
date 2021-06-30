@@ -8,7 +8,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 const Footer: React.FC = () => {
     return (
-        <div className="footer  -mt-40 md:pt-16 pt-0 " >
+        <div className="footer  -mt-40 md:pt-16 pt-0 lg:pt-1  " >
             <div className="footer_flex">
                 <div className="footer_col -mt-4">
                     <Logo />
