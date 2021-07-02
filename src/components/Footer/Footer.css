@@ -1,14 +1,15 @@
 .footer {
+  position: relative;
   background: #10082f;
-  height: 624px;
+  height: 70.9vh;
   font-weight: bold;
   color: white;
 }
 .footer_flex {
   display: flex;
   justify-content: space-between;
-  margin: 0 10rem;
-  padding-top: 30vh;
+  /* margin: 0 10rem; */
+  padding: 5vh 5vh 0 5vh;
 }
 .footer_col {
   display: flex;
