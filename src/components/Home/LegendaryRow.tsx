@@ -4,12 +4,27 @@ interface Props {
   header: any;
   rightArrow: any;
   cards?: Array<any>;
+  background: any;
 }
 
-const LegendaryRow: React.FC<Props> = ({ cards, header, rightArrow }) => {
+const LegendaryRow: React.FC<Props> = ({
+  background,
+  cards,
+  header,
+  rightArrow,
+}) => {
   return (
     <>
-      <div className="card-div md:mt-40 md:px-16 px-10">
+      <div
+        className="card-div md:px-16 px-10"
+        style={{
+          backgroundImage: `url(${background})`,
+          height: "147vh",
+          backgroundSize: "cover",
+          objectFit: "contain",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <img src={header} alt="banner1" className="header-img" />
         <div className="relative mx-auto md:mt-10 mt-5 md:mb-32 mb-10 cards-container">
           <div className="flex justify-center items-center">

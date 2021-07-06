@@ -1,0 +1,43 @@
+.each-slide {
+  outline: unset;
+  width: 90% !important;
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+}
+.slider-component {
+  margin: auto;
+  width: 88%;
+  max-height: fit-content;
+  background-color: transparent;
+  overflow: hidden;
+}
+.each-slide img {
+  width: 100%;
+}
+.arrow {
+  transform: translateY(-35%);
+  color: rgb(255, 183, 0);
+  position: absolute;
+  cursor: pointer;
+  z-index: 120;
+}
+.arrow:hover {
+  color: gold;
+}
+
+.left-direction {
+  margin-top: 20% !important;
+  margin-left: 5% !important;
+}
+.right-direction {
+  margin-top: 20% !important;
+  margin-left: -5% !important;
+}
+.next {
+  right: 0%;
+  top: 42%;
+}
+.prev {
+  left: 0%;
+  top: 42%;
+}

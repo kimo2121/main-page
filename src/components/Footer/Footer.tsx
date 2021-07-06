@@ -4,54 +4,56 @@ import Logo from "../Logo";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import logo1 from "../../assests/logo1.png";
+import logo2 from "../../assests/logo2.png";
 
 const Footer: React.FC = () => {
   return (
-    <div className="footer  -mt-40 md:pt-16 pt-0 lg:pt-1  ">
+    <div className="footer">
       <div className="footer_flex">
-        <div className="footer_col -mt-4">
-          <Logo />
+        <div className="footer_col0">
+          <div className="flex items-center">
+            <img src={logo1} alt="logo" className="" />
+            <img src={logo2} alt="logo" className="" />
+          </div>
           <div className="soicalSvg">
             <FaFacebookF style={{ fontSize: "1.5rem" }} />
             <FaInstagram style={{ fontSize: "1.5rem" }} />
             <FaLinkedinIn style={{ fontSize: "1.5rem" }} />
           </div>
         </div>
-        <div className="footer_col">
-          <p className="mt-4">Navigate</p>
-          <p className="mt-4">Home</p>
-          <p className="mt-4">Products</p>
-          <p className="mt-4">Popular Nfts</p>
-          <p className="mt-4">About</p>
+        <div className="footer_col1">
+          <p className="">Navigate</p>
+          <p className="">Home</p>
+          <p className="">Products</p>
+          <p className="">Popular Nfts</p>
+          <p className="">About</p>
         </div>
-        <div className="footer_col">
-          <p className="mt-4">Support</p>
-          <p className="mt-4">Contact Us</p>
-          <p className="mt-4">FAQs</p>
-          <p className="mt-4">Email</p>
+        <div className="footer_col2">
+          <p className="">Support</p>
+          <p className="">Contact Us</p>
+          <p className="">FAQs</p>
+          <p className="">Email</p>
         </div>
-        <div className="footer_col mt-4">
+        <div className="footer_col3">
           <p>
             Subscribe to our newsletter to stay updated on the latest release
           </p>
-
-          <div className="footer_input mt-5">
-            <div className="input_contianer ">
-              <input
-                type="text"
-                placeholder="Enter your email"
-                className="ml-5 "
-              />
-            </div>
-            <button>Subscribe</button>
+          <div className="footer_input">
+            <input
+              type="text"
+              placeholder="Enter your email"
+              className="input_contianer"
+            />
+            <button className="footer_input_btn">Subscribe</button>
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-between  md:my-10 md:mx-40 my-5 mx-5 md:flex-row text-base ">
-        <p className="text-sm md:text-lg">
+      <div className="footer_down">
+        <p className="text-sm md:mr-24 md:text-lg ">
           Copyright © 2010-2021 ECCHI COIN. All rights reserved.
         </p>
-        <p className="mt-5 text-sm md:text-lg">Privacy Policy</p>
+        <p className="text-sm md:text-lg">Privacy Policy</p>
       </div>
     </div>
   );

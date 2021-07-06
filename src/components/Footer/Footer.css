@@ -1,7 +1,12 @@
 .footer {
   position: relative;
+  /* z-index: -100; */
+  margin-top: -1vh;
+  padding: 10vh 5vh 5vh 5vh;
+  /* padding-top: 15vh; */
+  align-items: center;
   background: #10082f;
-  height: 70.9vh;
+  min-height: 63.9vh;
   font-weight: bold;
   color: white;
 }
@@ -9,15 +14,31 @@
   display: flex;
   justify-content: space-between;
   /* margin: 0 10rem; */
-  padding: 5vh 5vh 0 5vh;
+  margin-bottom: 10vh;
+  height: 100%;
+  flex-wrap: wrap !important;
+  width: 100%;
 }
-.footer_col {
+.footer_col0,
+.footer_col1,
+.footer_col2,
+.footer_col3 {
   display: flex;
   flex-direction: column;
+  height: 100%;
   /* justify-content: center; */
   align-items: flex-start;
-  max-width: 300px;
+  width: 200px;
 }
+.footer_col3 {
+  width: 350px;
+}
+.footer_flex p {
+  margin-top: 3vh;
+}
+/* .footer_col3 p {
+  margin: 3vh 0 1vh 0 !important;
+} */
 .soicalSvg {
   display: flex;
   justify-content: space-between;
@@ -32,27 +53,31 @@
 }
 .footer_input {
   display: flex;
+  margin-top: 5vh;
   justify-content: space-between;
   align-items: center;
   height: 50px;
-  width: 325px;
+  width: 100%;
 }
 
 .input_contianer {
   border: 1px solid rgba(255, 255, 255, 0.13);
-  height: 95%;
-  width: 70%;
-}
-
-.footer_input input {
+  width: 15%;
+  display: block;
   height: 90%;
   background: #10082f;
   color: white;
-  border: none;
-  /* margin-left: 1rem; */
-  width: 70%;
-  font-size: 1rem;
+  padding-left: 2vw;
+  width: 100%;
+  font-size: 0.8rem;
+  height: 95%;
 }
+.footer_input_btn {
+  font-size: 0.8rem;
+  padding: 0 1vw;
+  width: 40%;
+}
+
 .footer_input input:focus {
   outline: none;
 }
@@ -66,14 +91,25 @@
   color: white;
 }
 
+.footer_down {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer_down p {
+  margin-top: 2vh;
+}
 @media only screen and (max-width: 768px) {
   .footer {
     font-size: 0.7rem;
+    /* height: 85.9vh; */
+
+    /* padding-top: 0vh; */
   }
   .footer_flex {
     flex-wrap: wrap;
-    margin: 0;
-    padding-top: 15rem;
+    margin-bottom: 5vh;
+    /* padding-top: 25vh; */
   }
   .footer_col {
     padding: 0 1rem;

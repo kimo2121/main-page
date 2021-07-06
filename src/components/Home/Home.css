@@ -14,12 +14,14 @@
 .banner_text {
   margin: auto;
   width: 50%;
-  height: 13%;
+  margin-top: 25%;
+  /* height: 13%; */
 }
 .Silver_heading {
-  margin-top: 6vh;
 }
 .card-div {
+  margin-top: -0.5vh;
+  margin-bottom: -0.5vh;
   width: 100%;
 }
 .header-img {
@@ -59,10 +61,31 @@
 .three-cards {
   position: absolute;
   margin-top: 5vh;
+  z-index: 100000;
   right: 10vw;
 }
 .three-cards img {
   width: 25vw;
+}
+.row1 {
+  background-image: url("../../assests/banner1.svg");
+}
+.last-picture {
+  position: absolute;
+  z-index: -10000;
+  height: 100%;
+}
+.nft-component {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+.each-nft {
+  margin: 1.75vh 20px;
+  height: 79.45vh;
+  /* width: 23.57vw; */
+  width: 322px;
 }
 @media only screen and (max-width: 768px) {
   .right-arrow {
@@ -71,8 +94,4 @@
   .legendary-arrow {
     right: 10vw;
   }
-  /* .banner_text {
-    width: 10rem;
-    height: 10rem;
-  } */
 }

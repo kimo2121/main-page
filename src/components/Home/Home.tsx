@@ -1,5 +1,6 @@
 import React from "react";
-import CardRow from "./CardRow";
+import SliderComponent from "../SliderComponent/SliderComponent";
+import SliderComponentLegendary from "../SliderComponent/SliderComponentLegendary";
 import TrendingNFTS from "./TrendingNFTS";
 import LegendaryRow from "./LegendaryRow";
 
@@ -13,20 +14,29 @@ import banner5 from "../../assests/banner5.svg";
 import banner1_text from "../../assests/banner1_text.svg";
 import Silver_heading from "../../assests/Silver_heading.png";
 import SilverCard from "../../assests/SilverCard.png";
-import SilverLeftArrow from "../../assests/SilverLeftArrow.svg";
+import SilverLeftarrow from "../../assests/SilverLeftarrow.png";
+import SilverRightarrow from "../../assests/SilverRightarrow.png";
+// import SilverRightarrow  "../../assests/SilverRightarrow.png";
 import GoldHeading from "../../assests/GoldHeading.svg";
 import GoldCard from "../../assests/GoldCard.png";
-import GoldLeftArrow from "../../assests/GoldLeftArrow.svg";
+import GoldRightarrow from "../../assests/GoldRightarrow.png";
+import GoldLeftarrow from "../../assests/GoldLeftarrow.png";
 import PlatinumHeading from "../../assests/PlatinumHeading.svg";
 import PlatinumCard from "../../assests/PlatinumCard.png";
-import PlatinumLeftArrow from "../../assests/PlatinumLeftArrow.png";
+import PlatinumLeftarrow from "../../assests/PlatinumLeftarrow.png";
+import PlatinumRightarrow from "../../assests/PlatinumRightarrow.png";
 import Trending_NFT_Heading from "../../assests/Trending_NFT_Heading.png";
 import LegendaryHeading from "../../assests/LegendaryHeading.png";
 import LegendaryCard from "../../assests/LegendaryCards.png";
-import LegendaryleftArrow from "../../assests/LegendaryleftArrow.png";
+import LegendaryLeftarrow from "../../assests/LegendaryLeftarrow.png";
+import LegendaryRightarrow from "../../assests/LegendaryRightarrow.png";
 import NFTsLoadingCards from "../../assests/NFTsLoadingCards.svg";
-import SliderComponent from "../Slider/Slider";
+import Group462 from "../../assests/Group462.png";
 
+import Group200 from "../../assests/Group200.svg";
+import Group300 from "../../assests/Group300.png";
+import Group400 from "../../assests/Group400.png";
+import Group500 from "../../assests/Group500.png";
 import "./Home.css";
 
 const Home: React.FC = () => {
@@ -54,7 +64,13 @@ const Home: React.FC = () => {
     GoldCard,
     PlatinumCard,
   ];
-  const LegendaryCards: Array<any> = [LegendaryCard, LegendaryCard];
+  // const backGroundBanner: Array<any> = [banner1, banner2, banner3, banner4];
+  const LegendaryCards: Array<any> = [
+    LegendaryCard,
+    LegendaryCard,
+    LegendaryCard,
+    LegendaryCard,
+  ];
   return (
     <div className="relative ">
       {/* banner */}
@@ -63,40 +79,69 @@ const Home: React.FC = () => {
       </div>
       <img src={headerImg} alt="banner1" className="w-full h-full" />
       <div className="relative ">
-        <img src={banner1} alt="banner1" className=" w-full h-full" />
-        <img src={banner2} alt="banner1" className=" w-full h-full -mt-1" />
-        <img src={banner3} alt="banner1" className=" w-full h-full -mt-1" />
-        <img src={banner4} alt="banner1" className=" w-full h-full -mt-1" />
-        <img src={banner5} alt="banner1" className=" w-full h-full -mt-1" />
-        <div className="absolute left-0 top-0 right-0 ml-auto  mr-auto Silver_heading">
-          {/* <SliderComponent /> */}
-          <CardRow
-            headerImg={Silver_heading}
-            cardImgs={sliverCards}
-            rightArrow={SilverLeftArrow}
-          />
-          <CardRow
-            headerImg={GoldHeading}
-            cardImgs={GoldenCards}
-            rightArrow={GoldLeftArrow}
-          />
-          <CardRow
-            headerImg={PlatinumHeading}
-            cardImgs={PlatinumCards}
-            rightArrow={PlatinumLeftArrow}
-          />
-          <LegendaryRow
+        {/* <img src={banner1} alt="banner1" className=" w-full h-full -mt-1" /> */}
+        {/* <img src={banner2} alt="banner1" className=" w-full h-full -mt-1" /> */}
+        {/* <img src={banner3} alt="banner1" className=" w-full h-full -mt-1" /> */}
+        {/* <img src={banner4} alt="banner1" className=" w-full h-full -mt-1" /> */}
+        {/* <img
+          src={Group462}
+          alt="banner1"
+          className="last-picture w-full  -mt-1"
+        /> */}
+        <div
+          // style={{
+          //   backgroundImage: `url(${Group462})`,
+          //   height: "744vh",
+          //   // width: "100vw",
+          //   backgroundSize: "cover",
+          //   backgroundRepeat: "no-repeat",
+          //   backgroundPosition: "center",
+          // }}
+          className="  Silver_heading"
+        >
+          <div
+            style={{
+              backgroundImage: `url(${Group300})`,
+              backgroundSize: "cover",
+              height: "fit-content",
+              marginTop: "-.5vh",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            <SliderComponent
+              background={banner1}
+              headerImg={Silver_heading}
+              cardImgs={sliverCards}
+              leftArrow={SilverLeftarrow}
+              rightArrow={SilverRightarrow}
+            />
+            <SliderComponent
+              background={banner2}
+              headerImg={GoldHeading}
+              cardImgs={GoldenCards}
+              leftArrow={GoldLeftarrow}
+              rightArrow={GoldRightarrow}
+            />
+            <SliderComponent
+              background={banner3}
+              headerImg={PlatinumHeading}
+              cardImgs={PlatinumCards}
+              leftArrow={PlatinumLeftarrow}
+              rightArrow={PlatinumRightarrow}
+            />
+          </div>
+          <SliderComponentLegendary
+            background={Group400}
             header={LegendaryHeading}
             cards={LegendaryCards}
-            rightArrow={LegendaryleftArrow}
+            leftArrow={LegendaryLeftarrow}
+            rightArrow={LegendaryRightarrow}
           />
           <TrendingNFTS
+            background={Group500}
             header={Trending_NFT_Heading}
             cards={TrendingNFTS_Cards}
           />
-          <div className="three-cards">
-            <img src={NFTsLoadingCards} alt="logo" />
-          </div>
         </div>
       </div>
     </div>
